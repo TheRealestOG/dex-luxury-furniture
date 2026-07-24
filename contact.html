@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - DeX Luxury Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">DeX Luxury Furniture</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h1>Get In Touch</h1>
+            <p class="intro-text">We'd love to hear from you. Contact us for inquiries, consultations, or feedback.</p>
+            
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="custom-order">Custom Order</option>
+                                <option value="consultation">Interior Consultation</option>
+                                <option value="delivery">Delivery & Installation</option>
+                                <option value="maintenance">Maintenance & Repair</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-wrapper">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="contact-info-item">
+                        <div class="info-icon"></div>
+                        <div class="info-content">
+                            <h3>Address</h3>
+                            <p>Shehu Kangiwa Street,<br>Along Shiroro road,<br>Minna, Niger State</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="info-icon"></div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>Main: +234 7045 332 593<br>Sales: +234 9011 969 810<br>Support: + 234 806 576 1412</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="info-icon"></div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>General: info@dexluxury.com<br>Sales: sales@dexluxury.com<br>Support: support@dexluxury.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="info-icon"></div>
+                        <div class="info-content">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h2>Visit Our Showroom</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.9690728519413!2d6.546945474141756!3d9.597931379825784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104c71bc50509635%3A0xf764e535a52ba853!2sShehu%20Kangiwa%20Road%2C%20Minna%20South%2C%20Minna%20920101%2C%20Niger!5e0!3m2!1sen!2sng!4v1784108679229!5m2!1sen!2sng" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 DeX Luxury Furniture. All rights reserved.</p>
+        <p>Contact: info@dexluxury.com | Phone: +234 7045 332 593</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
