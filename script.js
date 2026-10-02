@@ -123,7 +123,7 @@ function renderProducts(filter = 'all') {
                 <p class="product-description">${product.description}</p>
                 <div class="product-bottom">
                     <p class="product-price"><small>Starting from</small>${priceFormatter.format(product.price)}</p>
-                    <button class="enquire-button" type="button" data-enquire="${product.id}">Enquire <span aria-hidden="true">↗</span></button>
+                    <button class="enquire-button" type="button" data-enquire="${product.id}">Enquire</button>
                 </div>
             </div>
         </article>
