@@ -3,73 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - DeX Luxury Furniture</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Discover furniture for beautiful, comfortable living at DeX Luxury Furniture in Minna, Nigeria.">
+    <meta name="theme-color" content="#17211f">
+    <title>DeX Luxury Furniture | Furniture for Living</title>
+    <link rel="stylesheet" href="store.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">DeX Luxury Furniture</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to DeX Luxury Furniture</h1>
-            <p>Elevate Your Living Space with Premium, Handcrafted Furniture</p>
-            <a href="services.html" class="cta-button">Explore Our Collection</a>
-        </div>
-    </section>
-
-    <!-- Featured Products Section -->
-    <section class="featured">
-        <h2>Featured Collections</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-image"></div>
-                <h3>Modern Sofas</h3>
-                <p>Contemporary designs with comfort and elegance</p>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-container">
+                <a class="logo" href="#home" aria-label="DeX Luxury Furniture home"><span class="logo-mark">D</span><span>DeX <small>Luxury Furniture</small></span></a>
+                <ul class="nav-links">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#collection">Shop</a></li>
+                    <li><a href="#about">Our story</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a class="nav-visit" href="#contact">Visit us <span aria-hidden="true">↗</span></a></li>
+                </ul>
             </div>
-            <div class="product-card">
-                <div class="product-image"></div>
-                <h3>Dining Chairs</h3>
-                <p>Premium seating for your dining experience</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image"></div>
-                <h3>Bedroom Sets</h3>
-                <p>Luxury sleeping solutions for ultimate comfort</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image"></div>
-                <h3>Storage Solutions</h3>
-                <p>Stylish and functional storage furniture</p>
-            </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- Call to Action -->
-    <section class="cta-section">
-        <h2>Ready to Transform Your Home?</h2>
-        <p>Visit our showroom or browse our online collection</p>
-        <button class="cta-button" onclick="window.location.href='services.html'">Get Started</button>
-    </section>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow"><span class="eyebrow-line"></span>Designed for the way you live</p>
+                <h1>Come home to<br><em>something good.</em></h1>
+                <p>Furniture that brings comfort, craft, and a little more you into every room.</p>
+                <a href="#collection" class="cta-button">Explore the collection <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-caption"><span>DeX Luxury Furniture</span><span>Minna, Nigeria</span></div>
+        </section>
 
-    <!-- Footer -->
+        <section class="featured section-wrap" id="collection">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow eyebrow-dark">The collection</p>
+                    <h2>Good things, for every room.</h2>
+                </div>
+                <p class="section-intro">Considered pieces, made to be lived with. Discover something you love.</p>
+            </div>
+            <div class="filter-bar" role="group" aria-label="Filter furniture by room">
+                <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All furniture</button>
+                <button class="filter-button" type="button" data-filter="living" aria-pressed="false">Living</button>
+                <button class="filter-button" type="button" data-filter="dining" aria-pressed="false">Dining</button>
+                <button class="filter-button" type="button" data-filter="bedroom" aria-pressed="false">Bedroom</button>
+                <button class="filter-button" type="button" data-filter="storage" aria-pressed="false">Storage</button>
+            </div>
+            <div class="product-grid" id="productGrid" aria-live="polite"></div>
+            <p class="price-note">Indicative starting prices in Nigerian naira. Final quotes depend on materials, dimensions, and finish.</p>
+        </section>
+
+        <section class="story-band" id="about">
+            <div class="story-image" role="img" aria-label="A considered, comfortable living room"></div>
+            <div class="story-copy">
+                <p class="eyebrow eyebrow-dark">A little about us</p>
+                <h2>Made for your home.<br>Chosen by you.</h2>
+                <p>At DeX, we believe good furniture should feel as good as it looks. Since 2010, our team has helped homes across Minna find pieces with lasting comfort, thoughtful details, and a sense of their own.</p>
+                <a href="#contact" class="text-link">Come meet the team <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section class="services-section section-wrap" id="services">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow eyebrow-dark">More than furniture</p>
+                    <h2>A little help makes<br>all the difference.</h2>
+                </div>
+                <!-- <p class="section-intro">From the first sketch to the final placement, we're here to make the process feel easy.</p> -->
+            </div>
+            <div class="service-list">
+                <article class="service-item"><span class="service-number">01</span><div><h3>Custom furniture</h3><p>Bring us your idea. We'll help shape a piece around your space and style.</p></div><span class="service-arrow" aria-hidden="true">↗</span></article>
+                <article class="service-item"><span class="service-number">02</span><div><h3>Interior consultation</h3><p>Thoughtful advice on layouts, materials, and finding the right pieces.</p></div><span class="service-arrow" aria-hidden="true">↗</span></article>
+                <article class="service-item"><span class="service-number">03</span><div><h3>Delivery &amp; installation</h3><p>Careful delivery and a hand with getting everything just right.</p></div><span class="service-arrow" aria-hidden="true">↗</span></article>
+                <article class="service-item"><span class="service-number">04</span><div><h3>Care &amp; repair</h3><p>Keep the pieces you love looking their best, year after year.</p></div><span class="service-arrow" aria-hidden="true">↗</span></article>
+            </div>
+        </section>
+
+        <section class="reviews-section" id="reviews">
+            <div class="review-heading"><p class="eyebrow">Kind words, well earned</p><h2>Our customers feel at home.</h2><p>★★★★★</p></div>
+            <div class="review-grid">
+                <blockquote>“The quality exceeded my expectations. Every piece is beautifully crafted, and the team made the whole process feel personal.”<cite>Sunday O. <span>DeX customer</span></cite></blockquote>
+                <blockquote>“Our custom dining set transformed the room. The craftsmanship is outstanding and it feels like it was made just for us.”<cite>Aliu U. <span>DeX customer</span></cite></blockquote>
+                <blockquote>“Excellent service from start to finish. The delivery team took real care, and everything looks wonderful in our home.”<cite>Victor J. <span>DeX customer</span></cite></blockquote>
+            </div>
+        </section>
+
+        <section class="contact-section section-wrap" id="contact">
+            <div class="contact-heading"><p class="eyebrow eyebrow-dark">Your next step</p><h2>Let's make yourself at home.</h2><p>Ask about a piece, plan a visit, or simply tell us what you're looking for.</p></div>
+            <div class="contact-content">
+                <form action="https://formspree.io/f/xkjglbrw" method="post" class="contact-form" id="contactForm">
+                    <h3>Send us a note</h3>
+                    <label for="name">Your name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required>
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                    <label for="productInterest">Interested in</label>
+                    <input id="productInterest" name="product" type="text" placeholder="A piece, a room, or an idea">
+                    <label for="message">A little more</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us what you have in mind"></textarea>
+                    <button class="cta-button" type="submit">Continue by email <span aria-hidden="true">↗</span></button>
+                    <p class="form-note" id="formNote" role="status">Your email app will open with your message ready to send.</p>
+                </form>
+                <div class="showroom-info">
+                    <p class="eyebrow eyebrow-dark">Visit the showroom</p>
+                    <h3>Come see how it feels.</h3>
+                    <p>Shehu Kangiwa Street<br>Along Shiroro Road<br>Minna, Niger State</p>
+                    <a href="tel:+2347045332593">+234 704 533 2593</a>
+                    <a href="mailto:info@dexluxury.com">info@dexluxury.com</a>
+                    <p class="opening-hours">Monday – Friday <span>9:00 am – 6:00 pm</span><br>Saturday <span>10:00 am – 4:00 pm</span><br>Sunday <span>Closed</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 DeX Luxury Furniture. All rights reserved.</p>
-        <p>Contact: info@dexluxury.com | Phone: +234 70 453 32593</p>
+        <a class="logo footer-logo" href="#home"><span class="logo-mark">D</span><span>DeX <small>Luxury Furniture</small></span></a>
+        <p>Thoughtfully furnished, in Minna and beyond.</p>
+        <p>&copy; 2026 DeX Luxury Furniture</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
